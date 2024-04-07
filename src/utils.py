@@ -85,9 +85,8 @@ class DocumentProcessingPipeline:
         return Chroma.from_documents(text_chunks, self.embeddings, persist_directory=self.persist_directory)
 
     def _fetch_urls(self, query: str) -> List[str]:
-        # Placeholder for URL fetching logic
-        # Replace this with the actual logic to fetch URLs based on the query
-        return [url for url in search(query, lang="en", num_results=10) if 'pdf' not in url]
+        #Reviewed manually
+        return ['https://www.daltonstate.edu/skins/userfiles/files/band-aid-guide.pdf','https://www.verywellhealth.com/basic-first-aid-procedures-1298578','https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/first-aid-basics-and-drsabcd']
 
 class RetrievalQAProcessor:
     def __init__(self, qa_chain, captioner):

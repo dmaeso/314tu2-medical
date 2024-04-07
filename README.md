@@ -21,7 +21,7 @@ This Medical Assistant Application utilizes advanced Large Language Models (LLMs
 
 
    ```bash
-   git clone https://gitfront.io/r/314tu2/qLaDsrvrKe1e/314tu2-medical.git
+   git clone https://github.com/dmaeso/314tu2-medical.git
    cd 314tu2-medical
 
 2. **Building the Docker Image:**

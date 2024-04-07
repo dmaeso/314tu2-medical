@@ -3,7 +3,9 @@ from typing import Any
 from langchain.chains import  RetrievalQA
 from langchain_core.prompts import PromptTemplate
 from langchain_community.llms.huggingface_pipeline import HuggingFacePipeline
-
+from tqdm import tqdm
+from functools import partialmethod
+tqdm.__init__ = partialmethod(tqdm.__init__, disable=True)
 import numpy as np
 from PIL import Image
 from transformers import (
@@ -18,7 +20,7 @@ from src.utils import DocumentProcessingPipeline, MistralAIModel, RetrievalQAPro
 import gradio as gr
 
 if torch.cuda.is_available():
-    print("CUDA enabled! starting...\n")
+    print("CUDA enabled! Starting...\n")
 else:
     print("CUDA not detected! Exiting...\n")
     exit()
@@ -74,8 +76,7 @@ logging.info(f"Processed documents for search query: {search_query}")
 # Template and prompt setup
 template: str  = """[SCENARIO]
 Act as an emergency medic. Use the information below to answer the subsequent question.
-Include an image description if necessary. End your answer recommending medical assistance.
-For non-health-related queries, respond with an inability to assist on the topic.
+Include an image description if necessary. For non-health-related queries, respond with an inability to assist on the topic.
 
 [CONTEXT]
 {context}
