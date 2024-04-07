@@ -1,0 +1,11 @@
+gradio
+xformer
+chromadb
+langchain
+accelerate
+transformers
+bitsandbytes
+unstructured
+sentence-transformers
+googlesearch-python
+pysqlite3-binary
