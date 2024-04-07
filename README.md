@@ -21,8 +21,8 @@ This Medical Assistant Application utilizes advanced Large Language Models (LLMs
 
 
    ```bash
-   git clone https://github.com/dmaeso/hpcds-medical.git
-   cd hpcds-medical
+   git clone https://gitfront.io/r/314tu2/qLaDsrvrKe1e/314tu2-medical.git
+   cd 314tu2-medical
 
 2. **Building the Docker Image:**
 
@@ -44,7 +44,7 @@ This Medical Assistant Application utilizes advanced Large Language Models (LLMs
 1. **Access to Google Collaborate**
 
 
-    [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dmaeso/hpcds-medical/blob/main/MedicalAssistant_Demo.ipynb)
+    [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dmaeso/314tu2-medical/blob/main/MedicalAssistant_Demo.ipynb)
 
 
 2. **Ensure GPU usage: Runtime Environment > Change runtime type > Hardware accelerator > T4 GPU**
